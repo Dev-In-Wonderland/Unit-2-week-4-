@@ -271,7 +271,23 @@ const asyncAwaitExample = async function () {
 
                 
                 <a style="width: 18%" href="">
-              <div id="card-altro" class="card" >
+              <div id="card-altro" class="card bg-dark" >
+                <img
+                  src=${album.album.cover}
+                  class="card-img-top "
+                  alt="..."
+                />
+                <div class="card-body bg-dark text-light">
+                  <h5 class="w-100 card-title">${album.album.title}</h5>
+                  <p class="card-text">
+                  ${album.artist.name}
+                  </p>
+                </div>
+            </div>
+            </a>
+
+                <a style="width: 18%" href="">
+              <div id="card-altro" class="card bg-dark" >
                 <img
                   src=${album.album.cover}
                   class="card-img-top "
@@ -287,7 +303,7 @@ const asyncAwaitExample = async function () {
             </a>
 
                 <a style="width: 18%" href="">
-              <div id="card-altro" class="card" >
+              <div id="card-altro" class="card bg-dark" >
                 <img
                   src=${album.album.cover}
                   class="card-img-top "
@@ -303,7 +319,7 @@ const asyncAwaitExample = async function () {
             </a>
 
                 <a style="width: 18%" href="">
-              <div id="card-altro" class="card" >
+              <div id="card-altro" class="card bg-dark" >
                 <img
                   src=${album.album.cover}
                   class="card-img-top "
@@ -319,23 +335,7 @@ const asyncAwaitExample = async function () {
             </a>
 
                 <a style="width: 18%" href="">
-              <div id="card-altro" class="card" >
-                <img
-                  src=${album.album.cover}
-                  class="card-img-top "
-                  alt="..."
-                />
-                <div class="card-body bg-dark text-light">
-                  <h5 class="card-title">${album.album.title}</h5>
-                  <p class="card-text">
-                  ${album.artist.name}
-                  </p>
-                </div>
-            </div>
-            </a>
-
-                <a style="width: 18%" href="">
-              <div id="card-altro" class="card" >
+              <div id="card-altro" class="card bg-dark" >
                 <img
                   src=${album.album.cover}
                   class="card-img-top "
