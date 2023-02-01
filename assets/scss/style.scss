@@ -147,7 +147,16 @@ margin: 0 auto;
 
     }
 
-
+    #first-card{
+        display:none !important;
+        background-color: transparent !important;
+    }
+    #img-center{
+        margin: 0 auto !important;
+        width: 100% !important;
+        margin-left: 65px !important;
+        
+    }
 
     #column-sx{
         display: none;
@@ -182,9 +191,41 @@ margin: 0 auto;
         order: 2;
 
     }
-    #SidebarDX{
-        
-
-    }
     
+
+    #other-icon{
+        display: none;
+    }
+
+    
+#first-card{
+    margin-left: 200px;
+}
+
+
+#section1{
+    height: 30rem !important;
+    cursor: pointer;
+}
+    
+}
+
+#section3{
+    margin-bottom: 100px !important;
+}
+
+
+#section1 .card{
+    
+    cursor: pointer !important;
+}
+
+#section1 .card:hover{
+    background: rgb(51,51,51);
+background: linear-gradient(90deg, rgba(51,51,51,1) 24%, rgba(107,160,186,1) 100%);
+    
+}
+
+.none{
+    display: none;
 }

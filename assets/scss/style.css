@@ -679,6 +679,15 @@ footer {
     display: flex;
     flex-direction: row;
   }
+  #first-card {
+    display: none !important;
+    background-color: transparent !important;
+  }
+  #img-center {
+    margin: 0 auto !important;
+    width: 100% !important;
+    margin-left: 65px !important;
+  }
   #column-sx {
     display: none;
   }
@@ -702,4 +711,30 @@ footer {
   #center-column {
     order: 2;
   }
+  #other-icon {
+    display: none;
+  }
+  #first-card {
+    margin-left: 200px;
+  }
+  #section1 {
+    height: 30rem !important;
+    cursor: pointer;
+  }
+}
+#section3 {
+  margin-bottom: 100px !important;
+}
+
+#section1 .card {
+  cursor: pointer !important;
+}
+
+#section1 .card:hover {
+  background: rgb(51, 51, 51);
+  background: linear-gradient(90deg, rgb(51, 51, 51) 24%, rgb(107, 160, 186) 100%);
+}
+
+.none {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
