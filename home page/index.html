@@ -24,11 +24,44 @@
 }
 
 
+#section3 .card {
+  background-color: #2d2d2d;
+    border-radius: 5px;
+    width: 225px;
+    min-height: 3px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    text-transform: capitalize
+}
 
+#section3 .card:hover{
+  
+  background-color: #878383 !important;
+    transform: scale(1.05);
+    /* border: none;
+    background-color: #414141 !important;
+    border-radius: 5px !important;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: flex-start !important;
+    cursor: pointer;
+    transition: all 0.5s ease !important */
+
+}
+
+#section3 .card-body:hover{
+
+
+background-color: #414141 !important;
+}
     </style>
   </head>
 
-  <body>
+  <body class="ps-5">
     <div id="row" class="row d-flex ">
       <!--SUDDIVISIONE COLONNE-->
 
@@ -168,7 +201,7 @@
                 <a href=""><p class="card-text">Qui va il nome dell'artista</p></a>
                 <p class="card-text">Ascolta il singolo di Vattelapesca!</p>
                 <div class="d-flex">
-                  <a href="#" class="btn btn-success rounded-pill me-3 w-50">Play</a>
+                  <a href="#" onclick="funzioneclick()" class="btn btn-success rounded-pill me-3 w-50">Play</a>
                   <a
                     href="#"
                     class="btn btn-dark border border-light rounded-pill w-50"
@@ -183,6 +216,17 @@
 
 
           <section id="section2" class="container mt-5">
+
+
+            <h2 class="fs-5">Buonasera</h2>
+                    <div id="id-buonasera" class="row w-100 justify-content-around">
+                      </div>
+
+
+
+
+
+
             <!-- <h2 class="fs-5">Buonasera</h2>
             <div id="id-buonasera" class="row w-100 justify-content-around">
 
@@ -284,6 +328,20 @@
           </section>
 
           <section id="section3" class="container d-flex flex-column w-100 mt-5">
+            <div class=" d-flex mb-3 w-100 justify-content-between align-items-center">
+              <h3 class="fs-5">Altro di ciò che ti piace</h3>
+              <a class="btn rounded-pill">VISUALIZZA TUTTO</a>
+            </div>
+
+
+
+  
+  
+          <div id="id-altro" class="d-flex justify-content-between  w-100">
+
+          </div>
+  
+
 <!-- 
             <div class=" d-flex mb-3 w-100 justify-content-between align-items-center">
               <h3 class="fs-5">Altro di ciò che ti piace</h3>
@@ -446,7 +504,7 @@
             <div class="col col-2 imgCardH2">
               <img
                 class="imgCard"
-                src="./assets/img/navbarDX foto/Winni_Pooh.jpg"
+                src="./assets/img/Winni_Pooh.jpg"
               />
             </div>
 
@@ -465,7 +523,7 @@
         <!--FINE CARD FRIENDS-->
       </div>
     </div>
-
+    <!-- <a href="../album page _01_02/index-album.html"><img class="ms-2" src="http://placekitten.com/70/70" /></a> -->
     <!-- INIZIO player -->
     <footer id="section4">
       <!-- <div class="col">
