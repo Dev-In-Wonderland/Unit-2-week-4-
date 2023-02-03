@@ -246,15 +246,16 @@ const renderFavoriteSongs = async () => {
                     <a href="#"><i class="bi bi-mic-fill"></i></a>
                     <a href="#"><i class="bi bi-card-list"></i></a>
                     <a href="#"><i class="bi bi-pc-display"></i></a>
-                    <a href="#"><i class="bi bi-volume-down"></i></a>
-                    <progress
-                      class="player-volume-bar"
-                      id="file"
-                      max="100"
-                      value="20"
-                    >
-                      100%
-                    </progress>
+                    <div class="d-flex justify-content-center align-items-center">
+              <a href="#"><i class="bi bi-volume-down"></i></a>
+              <progress
+                class="player-volume-bar mb-4"
+                id="file"
+                max="100"
+                value="20"
+              >
+                100%
+              </progress>
                   </div>
                 </div>
               </div>
