@@ -1358,7 +1358,7 @@ const asyncAwaitExample7 = async function () {
                 <div id="player_left_text">
                   <ul>
                     <li id="player_left_text_li">
-                      <a class="text-decoration-none" href="#"><h5>${album.album.title}</h5></a>
+                      <a class="text-decoration-none" href="#"><h5>${album.title}</h5></a>
                     </li>
                     <li id="player_left_text_li">
                       <a class="text-decoration-none" href="#"><h6>${album.artist.name}</h6></a>
