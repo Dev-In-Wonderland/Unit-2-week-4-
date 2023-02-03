@@ -23,6 +23,14 @@
         width: 300px !important
     }
 
+
+
+.btn-group{
+    display: none !important;
+}
+
+
+
     #row{
         display:flex;
         flex-direction: column !important
@@ -41,7 +49,10 @@
     
     
 }
-
+#central-nav{
+    position: fixed;
+    top: 40px;
+}
 
 #section1 .card:hover{
     background-color: transparent !important;
@@ -166,7 +177,7 @@ margin: 0 auto;
     
 }
 
-@media  screen and (min-width:436px) and (max-width:1199px) {
+@media  screen and (min-width:768px) and (max-width:1199px) {
     body{
         background-color: rgb(67, 66, 66) !important;
         width: 100%!important;

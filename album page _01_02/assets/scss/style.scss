@@ -11,6 +11,19 @@
 @import "./_albumpage.scss";
 
 
+
+
+
+
+
+footer{
+    margin-left: 2rem  !important;
+}
+
+
+
+
+
 // MEDIA QUERIES
 
 
@@ -178,6 +191,7 @@ margin: 0 auto;
 }
 }
 
+
 @media  screen and (min-width:436px) and (max-width:1199px) {
     body{
         // background-color: rgb(67, 66, 66) !important;
@@ -188,8 +202,30 @@ margin: 0 auto;
         // overflow: hidden;
 
      }
+
+.btn-group{
+    display:none
+}
+     footer{
+        margin-left: 2rem  !important;
+    }
+*{
+    background-color: purple !important;
+} 
 #sidebar{
     display: none !important;
+}
+
+
+
+#footer{
+    border-top: 1px solid #000;
+    
+}
+
+
+#altro_card{
+    border: 1px solid #000 !important;
 }
      #id-buonasera{
         margin-left: 6rem !important;
