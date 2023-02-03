@@ -1,67 +1,157 @@
+// const baseAlbumURL = "https://striveschool-api.herokuapp.com/api/deezer/album/";
+// const spotlightAlbum = 120044;
+
+
+
+// const arrayIDAlbum = [
+//   75621062, 8887733, 7823038, 7824595, 7824584, 91333612, 345755977, 192529232,
+//   100674742, 59853252, 130678282,
+// ];
+
+// shuffleArray(arrayIDAlbum);
+// const buonaseraAlbums = [...arrayIDAlbum.slice(0, 6)];
+// const selectedAlbumIDs = [...arrayIDAlbum.slice(6)];
+
+// const fetchAlbum = async (index) => {
+//   try {
+//     let res = await fetch(baseAlbumURL + index);
+//     if (res.ok) {
+//       let data = await res.json();
+
+
+//       return data;
+//     } else {
+//       throw "errore nella sezione altro";
+//     }
+//     console.log(data)
+//   } catch (err) {
+//     console.log(err);
+//   }
+// };
+
+// // href="../index-arist.html?id=${spotlightAlbum.artist.id}
+
+
+// const announce = async (album) => {
+//   let spotlightAlbum = await fetchAlbum(album);
+//   //console.log(spotlightAlbum);
+
+//   let annuncio = document.getElementById("section1");
+//   //   annuncio.innerHTML = "";
+
+//   annuncio.innerHTML += `
+//        <div
+//                     class="card bg-dark col-12 d-flex w-100 h-100 flex-row justify-content-between align-items-center"
+//                   >
+//                       alt="..."
+//                       <a href="../album page _01_02/index-album.html"  href="../album page _01_02/index-album.html?id=${spotlightAlbum.id}"  ><img id="img-center"
+//                       src=${spotlightAlbum.cover_big}
+//                       class="ms-5 card-img-top bg-dark w-100 h-100"
+//                       alt="..."
+//                     /></a>
+//                     <div
+//                       id="first-card"
+//                       class="card-body  w-25 h-100 d-flex flex-column justify-content-between"
+//                     >
+//                       <div class="w-100  d-flex justify-content-between">
+//                         <p>ALBUM</p>
+//                         <a class="btn rounded-pill text-light ">NASCONDI ANNUNCI</a>
+//                       </div>
+//                       <a href="../album page _01_02/index-album.html"><h5 class="card-title">{song.title}</h5></a>
+//                       <a href="../artist page/index-artist.html"><p class="card-text">{song.artist.name}</p></a>
+//                       <p class="card-text">Ascolta il singolo di {song.artist.name}!</p>
+//                       <div class="d-flex">
+//                         <a href="#" class="btn btn-success rounded-pill me-3 w-25">Play</a>
+//                         <a
+//                           href="#"
+//                           class="btn btn-dark border border-light rounded-pill w-25"
+//                           >Salva</a
+//                         >
+//                       </div>
+//                     </div>
+//                   </div>    
+      
+
+//   `;
+
+// }
+
+
+
+// announce();
+
+
+
 
 
 //Sezione 0 
 
 
 
- fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=muse`)
-  .then(function (data) {
-    console.log(`try`, data);
+  fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=muse`)
+   .then(function (data) {
+     console.log(`try`, data);
 
-    if (data.ok) {
-      return data.json();
-    }
-  })
-  .then(function (data) {
-    let albums = data.data;
-    console.log(albums);
-    let selectedIds = [13636688];
-    let filteredSongs = albums.filter((song) => selectedIds.includes(song.id));
-    let card = document.getElementById("section1");
-    filteredSongs.forEach((song) => {
-      card.innerHTML += `
-
-
+     if (data.ok) {
+       return data.json();
+     }
+   })
+   .then(function (data) {
+     let albums = data.data;
+     console.log(albums);
+     let selectedIds = [13636688];
+     let filteredSongs = albums.filter((song) => selectedIds.includes(song.id));
+     let card = document.getElementById("section1");
+     filteredSongs.forEach((song) => {
+       card.innerHTML += `
 
 
 
-      <div
-                   class="card bg-dark col-12 d-flex w-100 h-100 flex-row justify-content-between align-items-center"
-                 >
-                   <a href="../album page _01_02/index-album.html"><img id="img-center"
-                     src=${song.album.cover_medium}
-                     class="ms-5 card-img-top bg-dark w-100 h-100"
-                     alt="..."
-                   /></a>
-                   <div
-                     id="first-card"
-                     class="card-body  w-25 h-100 d-flex flex-column justify-content-between"
-                   >
-                     <div class="w-100  d-flex justify-content-between">
-                       <p>ALBUM</p>
-                       <a class="btn rounded-pill text-light ">NASCONDI ANNUNCI</a>
-                     </div>
-                     <a href="../album page _01_02/index-album.html"><h5 class="card-title">${song.title}</h5></a>
-                     <a href="../artist page/index-artist.html"><p class="card-text">${song.artist.name}</p></a>
-                     <p class="card-text">Ascolta il singolo di ${song.artist.name}!</p>
-                     <div class="d-flex">
-                       <a href="#" class="btn btn-success rounded-pill me-3 w-25">Play</a>
-                       <a
-                         href="#"
-                         class="btn btn-dark border border-light rounded-pill w-25"
-                         >Salva</a
-                       >
-                     </div>
-                   </div>
-                 </div>
+
+
+       <div
+                    class="card mt-5 bg-dark col-12 d-flex w-100 h-75 flex-row justify-content-between align-items-center"
+                  >
+
+                    <a href="../album page _01_02/index-album.html"><img id="img-center"
+                      src=${song.album.cover_medium}
+                      class="ms-5 card-img-top bg-dark w-100 h-100"
+                      alt="..."
+                    /></a>
+
+                    <div
+                      id="first-card"
+                      class="card-body m-0  w-25 h-50 d-flex flex-column justify-content-evenly"
+                    >
+                      <div class="w-100 d-flex justify-content-between align-items-center">
+                        <p class="m-0">ALBUM</p>
+                        <a class="btn rounded-pill text-light ">NASCONDI ANNUNCI</a>
+                      </div>
+                      <a href="../album page _01_02/index-album.html"><h5 class="card-title">${song.title}</h5></a>
+                      <a href="../artist page/index-artist.html"><p class="card-text">${song.artist.name}</p></a>
+
+                      
+                      <p class="card-text">Ascolta il singolo di ${song.artist.name}!</p>
+
+                      <div class="d-flex mb-3">
+                        <a href="#" class="btn btn-success rounded-pill me-3 w-25">Play</a>
+                        <a
+                          href="#"
+                          class="btn btn-dark border border-light rounded-pill w-25"
+                          >Salva</a
+                        >
+                        </div>
+                      
+
+                    </div>
+                  </div>    
       
-      
 
 
 
-    `;
-    });
-  });
+     `;
+     });
+   });
   
   
   

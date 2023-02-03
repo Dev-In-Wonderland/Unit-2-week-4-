@@ -820,4 +820,92 @@ footer {
 
 .row {
   width: 100% !important;
+}
+
+a .card:hover {
+  background-color: #878383 !important;
+  transform: scale(1.05);
+}
+
+#section3 .card {
+  background-color: #2d2d2d;
+  border-radius: 5px;
+  width: 225px;
+  min-height: 3px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+#section3 .card:hover {
+  background-color: #878383 !important;
+  transform: scale(1.05);
+  /* border: none;
+  background-color: #414141 !important;
+  border-radius: 5px !important;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: flex-start !important;
+  cursor: pointer;
+  transition: all 0.5s ease !important */
+}
+
+#section3 .card-body:hover {
+  background-color: #414141 !important;
+}
+
+#central-column nav {
+  position: fixed !important;
+  top: 0 !important;
+  z-index: 100000000000000020000;
+  width: 65% !important;
+}
+
+#central-column nav .icon-nav {
+  margin-right: 20px !important;
+}
+
+#central-column nav .icon-nav:hover {
+  background-color: lightgray !important;
+}
+
+#nav-central {
+  width: 62% !important;
+  z-index: 10000000000000002000;
+}
+
+.positionf {
+  width: 65% !important;
+}
+
+#central-column .w-75 {
+  width: 60% !important;
+}
+
+.btn-group {
+  z-index: 100000000000000030000000;
+}
+
+.scrolled-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(166, 41, 41) !important;
+  height: auto;
+  /* border-bottom: 1px solid #191919; */
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 99999999999999;
+}
+
+.scrolled-button {
+  color: white;
+  /* padding: 0.5rem 1rem; */
+  border: none;
+  border-radius: 40px;
+  z-index: 999999999;
 }/*# sourceMappingURL=style.css.map */
